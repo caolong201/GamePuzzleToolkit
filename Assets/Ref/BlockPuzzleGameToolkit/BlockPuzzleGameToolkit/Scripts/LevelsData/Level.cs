@@ -34,7 +34,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
         }
     }
 
-    [CreateAssetMenu(fileName = "Level", menuName = "BlockPuzzleGameToolkit/Levels/Level", order = 1)]
+    [CreateAssetMenu(fileName = "Level", menuName = "Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Levels/Level", order = 1)]
     public class Level : ScriptableObject
     {
         public int rows = 8;

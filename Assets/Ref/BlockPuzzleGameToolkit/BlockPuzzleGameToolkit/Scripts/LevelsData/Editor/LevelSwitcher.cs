@@ -34,7 +34,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             this.level = level;
             num = level.Number;
             this.levelEditor = levelEditor;
-            Draw(AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/BlockPuzzleGameToolkit/UIBuilder/LevelSwitcher.uxml").Instantiate());
+            Draw(AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/UIBuilder/LevelSwitcher.uxml").Instantiate());
         }
 
         private void Draw(TemplateContainer visualTree)
