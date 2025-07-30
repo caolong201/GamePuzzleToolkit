@@ -77,7 +77,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
         private void PlayAdventureMode()
         {
             GameManager.instance.SetGameMode(EGameMode.Adventure);
-            GameManager.instance.OpenMap();
+            //GameManager.instance.OpenMap();
+            GameDataManager.SetLevel(Resources.Load<Level>("Levels/Level_" + GameDataManager.GetLevelNum()));
+            GameManager.instance.OpenGame();
         }
 
         private void SettingsButtonClicked()

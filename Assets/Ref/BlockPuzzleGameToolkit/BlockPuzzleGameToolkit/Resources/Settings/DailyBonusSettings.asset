@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e352da8d83b46c0a0b370c01f1c3666, type: 3}
   m_Name: DailyBonusSettings
   m_EditorClassIdentifier: 
-  dailyBonusEnabled: 1
+  dailyBonusEnabled: 0
   rewards:
   - resource: {fileID: 11400000, guid: 05af233fe9cfa409abb37d57d2cceaea, type: 2}
     count: 2
