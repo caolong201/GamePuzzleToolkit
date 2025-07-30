@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 10
   coinsForAd: 2
-  enableAds: 1
-  enableInApps: 1
-  enableLuckySpin: 1
-  enablePreFailedPopup: 1
+  enableAds: 0
+  enableInApps: 0
+  enableLuckySpin: 0
+  enablePreFailedPopup: 0
   privacyPolicyUrl: 
   ScorePerLine: 10
   enablePool: 1

@@ -23,6 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2b413ddb021cb4763b909c3e0da3cdd9, type: 2}
   - {fileID: 11400000, guid: c3a7596e9dc72084b98c3dc699e3f6ae, type: 2}
   tutorialLevels:
-  - {fileID: 11400000, guid: ca7334e723a92475e812ae922e2b48d3, type: 2}
-  - {fileID: 11400000, guid: a9c750a376f8941a8a953c3d7ba9d464, type: 2}
-  - {fileID: 11400000, guid: af997ea553a6e4249ba7bc1166194483, type: 2}
+  - {fileID: 11400000, guid: fe9f30c0d9e7dd341851714b617b4e76, type: 2}
+  - {fileID: 11400000, guid: cdbd2e35a0a6cd24fbc39f0729b20433, type: 2}
+  - {fileID: 11400000, guid: 51d50034e195cda4d94924066dc4adeb, type: 2}

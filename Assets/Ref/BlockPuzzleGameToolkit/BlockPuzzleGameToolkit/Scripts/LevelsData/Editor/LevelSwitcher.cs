@@ -139,7 +139,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             newLevel.name = $"Level_{levelsNum}";
             newLevel.levelType = level.levelType;
             newLevel.UpdateTargets();
-            var path = $"Assets/BlockPuzzleGameToolkit/Resources/Levels/Level_{levelsNum}.asset";
+            var path = $"Assets/Ref/BlockPuzzleGameToolkit/Resources/Levels/Level_{levelsNum}.asset";
             AssetDatabase.CreateAsset(newLevel, path);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();

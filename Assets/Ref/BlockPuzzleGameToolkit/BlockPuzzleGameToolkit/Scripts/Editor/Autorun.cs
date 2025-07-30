@@ -31,9 +31,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Editor
             EditorApplication.update -= InitProject;
             if (EditorApplication.timeSinceStartup < 10 || !EditorPrefs.GetBool(Application.dataPath + "AlreadyOpened"))
             {
-                if (SceneManager.GetActiveScene().name != "game" && Directory.Exists("Assets/BlockPuzzleGameToolkit/Scenes"))
+                if (SceneManager.GetActiveScene().name != "game" && Directory.Exists("Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes"))
                 {
-                    EditorSceneManager.OpenScene("Assets/BlockPuzzleGameToolkit/Scenes/main.unity");
+                    EditorSceneManager.OpenScene("Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity");
                 }
 
                 EditorPrefs.SetBool(Application.dataPath + "AlreadyOpened", true);
