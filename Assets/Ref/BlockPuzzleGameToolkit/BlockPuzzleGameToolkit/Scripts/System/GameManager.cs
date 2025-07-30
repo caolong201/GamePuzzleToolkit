@@ -104,13 +104,13 @@ namespace BlockPuzzleGameToolkit.Scripts.System
                     .Select(p => (p.ID, p.productType))
                     .ToArray();
 
-                // Initialize gaming services
-                await InitializeGamingServices.instance?.Initialize(
-                    OnInitializeSuccess,
-                    OnInitializeError
-                );
-                // Initialize IAP directly if InitializeGamingServices is not used
-                await IAPManager.instance?.InitializePurchasing(products);
+                // // Initialize gaming services
+                // await InitializeGamingServices.instance?.Initialize(
+                //     OnInitializeSuccess,
+                //     OnInitializeError
+                // );
+                // // Initialize IAP directly if InitializeGamingServices is not used
+                // await IAPManager.instance?.InitializePurchasing(products);
             }
 
             if (GameSettings.enableAds && IsNoAdsPurchased())

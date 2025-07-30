@@ -40,6 +40,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 551.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1322458975249820368, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1655197483932537881, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 1935238105414263423, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -424
@@ -76,6 +84,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3003781265706268505, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 3034727454866165546, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 3215138082470084056, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 467.1
@@ -91,6 +107,10 @@ PrefabInstance:
     - target: {fileID: 3215138082470084056, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3246447841832634768, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3335513469802644697, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_SizeDelta.y
@@ -148,6 +168,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5901963433571550174, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 6375955577351175614, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -159,6 +183,14 @@ PrefabInstance:
     - target: {fileID: 6443440068223350396, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -139
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035461044439347603, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 7153182688999176832, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 7560663172583379825, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -255,6 +287,18 @@ PrefabInstance:
     - target: {fileID: 8034155342639863909, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8089467198039293879, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8191060228955136454, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011409476583494045, guid: 42fecf35a1e774a20a5f0e45c3d3c10e, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
