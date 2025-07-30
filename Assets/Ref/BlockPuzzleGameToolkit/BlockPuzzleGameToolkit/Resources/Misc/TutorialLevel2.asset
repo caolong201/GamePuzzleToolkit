@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4a5c42505bd4683b56b6baff710ae0a, type: 3}
   m_Name: TutorialLevel2
   m_EditorClassIdentifier: 
-  rows: 5
-  columns: 5
+  rows: 8
+  columns: 8
   levelRows:
   - cells:
     - {fileID: 0}
@@ -21,47 +21,99 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    bonusItems: 0000000000
-    disabled: 0101010101
-    highlighted: 0000000000
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
   - cells:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    bonusItems: 0000000000
-    disabled: 0101010101
-    highlighted: 0000000000
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
+  - cells:
+    - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
+    - {fileID: 11400000, guid: f9f07c181947c4277bd7e9af0231e561, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 076dfbfdcab5144ef8bb5ebcffb3028d, type: 2}
+    - {fileID: 11400000, guid: 0f9f812a475d3440da78ff122ce1c739, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 5180488dd633f45489f0aae6f9d3de5e, type: 2}
+    - {fileID: 11400000, guid: dccadf237dcbf40038e114e641622b2d, type: 2}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
+  - cells:
+    - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
+    - {fileID: 11400000, guid: f9f07c181947c4277bd7e9af0231e561, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 076dfbfdcab5144ef8bb5ebcffb3028d, type: 2}
+    - {fileID: 11400000, guid: 0f9f812a475d3440da78ff122ce1c739, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 5180488dd633f45489f0aae6f9d3de5e, type: 2}
+    - {fileID: 11400000, guid: dccadf237dcbf40038e114e641622b2d, type: 2}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
+  - cells:
+    - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
+    - {fileID: 11400000, guid: f9f07c181947c4277bd7e9af0231e561, type: 2}
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 076dfbfdcab5144ef8bb5ebcffb3028d, type: 2}
+    - {fileID: 11400000, guid: 0f9f812a475d3440da78ff122ce1c739, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 5180488dd633f45489f0aae6f9d3de5e, type: 2}
+    - {fileID: 11400000, guid: dccadf237dcbf40038e114e641622b2d, type: 2}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
   - cells:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    bonusItems: 0000000000
-    disabled: 0000000000
-    highlighted: 0101010101
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
   - cells:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    bonusItems: 0000000000
-    disabled: 0101010101
-    highlighted: 0000000000
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
   - cells:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    bonusItems: 0000000000
-    disabled: 0101010101
-    highlighted: 0000000000
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    bonusItems: 0000000000000000
+    disabled: 0000000000000000
+    highlighted: 0000000000000000
   levelType: {fileID: 11400000, guid: 5b64c1586d9fc4496b7e95a7ec829258, type: 2}
   targetInstance:
   - targetScriptable: {fileID: 11400000, guid: a101d12b2edd14116a6ec86daa24704b, type: 2}
     amount: 1000
+    totalAmount: 0
   emptyCellPercentage: 10

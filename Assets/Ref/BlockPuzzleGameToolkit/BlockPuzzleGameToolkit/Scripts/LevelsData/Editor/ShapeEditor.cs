@@ -35,7 +35,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             var root = new VisualElement();
 
             // Load and apply USS
-            var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/BlockPuzzleGameToolkit/UIBuilder/ShapeEditorStyles.uss");
+            var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/UIBuilder/ShapeEditorStyles.uss");
             root.styleSheets.Add(styleSheet);
 
             root.Add(new Label(_target.name) { name = "title" });
