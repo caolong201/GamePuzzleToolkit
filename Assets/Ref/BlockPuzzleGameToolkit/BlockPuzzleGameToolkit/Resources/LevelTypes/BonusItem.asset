@@ -21,6 +21,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5482c8ad9b4404200ad40dc5e0f36405, type: 2}
   - {fileID: 11400000, guid: 32e9f8bcbba534fc5968df591158bf38, type: 2}
   - {fileID: 11400000, guid: ad03d85802a20cf4083ab0241da89a5b, type: 2}
+  - {fileID: 11400000, guid: 88dd466eec1675d49bdc175116619d91, type: 2}
+  - {fileID: 11400000, guid: 2534f01b42da00b47b4a947796509f67, type: 2}
+  - {fileID: 11400000, guid: 7b03274b0d856ad439c99119d9778c73, type: 2}
+  - {fileID: 11400000, guid: 02e5d018c74df1840995b6f8cba60143, type: 2}
+  - {fileID: 11400000, guid: cf66aef387860474ca36f43f03d373d0, type: 2}
+  - {fileID: 11400000, guid: 3fdf26b69a7faa544a9e9eb35a1bf1ba, type: 2}
+  - {fileID: 11400000, guid: 03e6df9c2486a794aa0f7e084884263b, type: 2}
   prePlayPopup: {fileID: 4178832618095490807, guid: a54bc7e44c36845d88c997af477f8eaa, type: 3}
   preFailedPopup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
   failedPopup: {fileID: 5818593289188755329, guid: b2e87c08fe0b34f2f8dafffa48eee43d, type: 3}
