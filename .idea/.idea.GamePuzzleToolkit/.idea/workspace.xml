@@ -6,15 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="437bf64e-7087-4e92-832f-2432c6540867" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/gamefield-cell-1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/gamefield-cell-1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/FieldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/FieldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/TutorialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/TutorialManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/BonusItemTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/BonusItemTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/PopupElements/TargetPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/PopupElements/TargetPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Editor/LevelEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/TargetScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/TargetScriptable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/Furniture_Cute/Materials/Color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/Furniture_Cute/Materials/Color.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,27 +21,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="30ZfOU2nUhBYhpuboWSiRhqMP7j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\2020.3.13f1\Editor\6000.0.51f1\Editor\Unity.exe" />
@@ -92,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1753839986009</updated>
       <workItem from="1753839987760" duration="14697000" />
+      <workItem from="1753953910680" duration="2766000" />
     </task>
     <servers />
   </component>

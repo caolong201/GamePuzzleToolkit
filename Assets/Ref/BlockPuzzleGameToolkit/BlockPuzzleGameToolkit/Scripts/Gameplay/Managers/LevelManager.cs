@@ -24,6 +24,7 @@ using BlockPuzzleGameToolkit.Scripts.LevelsData;
 using BlockPuzzleGameToolkit.Scripts.System;
 using BlockPuzzleGameToolkit.Scripts.Utils;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Pool;
@@ -43,20 +44,15 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private int comboCounter;
         private int missCounter;
 
-        [SerializeField]
-        private RectTransform gameCanvas;
+        [SerializeField] private RectTransform gameCanvas;
 
-        [SerializeField]
-        private RectTransform shakeCanvas;
+        [SerializeField] private RectTransform shakeCanvas;
 
-        [SerializeField]
-        private GameObject scorePrefab;
+        [SerializeField] private GameObject scorePrefab;
 
-        [SerializeField]
-        private GameObject[] words;
+        [SerializeField] private GameObject[] words;
 
-        [SerializeField]
-        private TutorialManager tutorialManager;
+        [SerializeField] private TutorialManager tutorialManager;
 
         private EGameMode gameMode;
         public Level _levelData;
@@ -77,8 +73,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private ObjectPool<GameObject> wordsPool;
         private ClassicModeHandler classicModeHandler;
 
-        private int shapePlacedCount = 0;
-        [SerializeField]  public int maxShapeAllowed = 20;
+        [SerializeField] public int maxMove = 20;
+        [SerializeField] private TextMeshProUGUI txtMoves;
 
         private void OnEnable()
         {
@@ -146,7 +142,6 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         {
             comboCounter = 0;
             missCounter = 0;
-            shapePlacedCount = 0;
             field.ShowOutline(false);
             Load();
         }
@@ -180,6 +175,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             if (gameMode == EGameMode.Classic && EventManager.GameStatus == EGameState.Playing)
                 SaveGameState();
         }
+
         private void Load()
         {
             if (GameManager.instance.IsTutorialMode())
@@ -199,9 +195,11 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                 return;
             }
 
-            FindObjectsOfType<MonoBehaviour>().OfType<IBeforeLevelLoadable>().ToList().ForEach(x => x.OnLevelLoaded(_levelData));
+            FindObjectsOfType<MonoBehaviour>().OfType<IBeforeLevelLoadable>().ToList()
+                .ForEach(x => x.OnLevelLoaded(_levelData));
             LoadLevel(_levelData);
-            FindObjectsOfType<MonoBehaviour>().OfType<ILevelLoadable>().ToList().ForEach(x => x.OnLevelLoaded(_levelData));
+            FindObjectsOfType<MonoBehaviour>().OfType<ILevelLoadable>().ToList()
+                .ForEach(x => x.OnLevelLoaded(_levelData));
             Invoke(nameof(StartGame), 0.5f);
             if (GameManager.instance.IsTutorialMode())
             {
@@ -216,6 +214,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private void LoadLevel(Level levelData)
         {
+            maxMove = levelData.maxMove;
+            txtMoves.text = maxMove + "";
             field.Generate(levelData);
             EventManager.GetEvent<Level>(EGameEvent.LevelLoaded).Invoke(levelData);
             OnLevelLoaded?.Invoke(levelData);
@@ -223,15 +223,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private void CheckLines(Shape obj)
         {
-            //dragon
-            shapePlacedCount++; 
-            Debug.Log($"Shape placed: {shapePlacedCount}/{maxShapeAllowed}");
-            if (shapePlacedCount > maxShapeAllowed)
-            {
-                Debug.Log("Reached max number of shape placements.");
-                SetLose();
-                return;
-            }
+            maxMove--;
+            txtMoves.text = maxMove + "";
 
             var lines = field.GetFilledLines(false, false);
             if (lines.Count > 0)
@@ -343,6 +336,15 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             }
 
             yield return null;
+
+            if (EventManager.GameStatus == EGameState.Playing)
+            {
+                if (maxMove <= 0)
+                {
+                    txtMoves.text = "0";
+                    SetLose();
+                }
+            }
         }
 
         private void SetWin()
@@ -387,7 +389,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private IEnumerator DestroyLines(List<List<Cell>> lines, Shape shape)
         {
-            SoundBase.instance.PlayLimitSound(SoundBase.instance.combo[Mathf.Min(comboCounter, SoundBase.instance.combo.Length - 1)]);
+            SoundBase.instance.PlayLimitSound(
+                SoundBase.instance.combo[Mathf.Min(comboCounter, SoundBase.instance.combo.Length - 1)]);
             EventManager.GetEvent<Shape>(EGameEvent.LineDestroyed).Invoke(shape);
 
             // Mark cells as destroying immediately at the start
@@ -404,7 +407,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                 if (line.Count == 0) continue;
 
                 var lineExplosion = lineExplosionPool.Get();
-                lineExplosion.Play(line, shape, RectTransformUtils.GetMinMaxAndSizeForCanvas(line, gameCanvas.GetComponent<Canvas>()), GetExplosionColor(shape));
+                lineExplosion.Play(line, shape,
+                    RectTransformUtils.GetMinMaxAndSizeForCanvas(line, gameCanvas.GetComponent<Canvas>()),
+                    GetExplosionColor(shape));
                 DOVirtual.DelayedCall(1.5f, () => { lineExplosionPool.Release(lineExplosion); });
                 foreach (var cell in line)
                 {
@@ -448,7 +453,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                     var instanceCell = field.cells[0, 0];
                     instanceCell.FillCell(Resources.Load<ItemTemplate>("Items/ItemTemplate 0"));
                     instanceCell.SetBonus(Resources.Load<BonusItemTemplate>("BonusItems/BonusItemTemplate 0"));
-                    var randomShape = itemFactory.CreateRandomShape(null, PoolObject.GetObject(cellDeck.shapePrefab.gameObject));
+                    var randomShape =
+                        itemFactory.CreateRandomShape(null, PoolObject.GetObject(cellDeck.shapePrefab.gameObject));
                     randomShape.SetBonus(Resources.Load<BonusItemTemplate>("BonusItems/BonusItemTemplate 0"), 1);
                     shakeCanvas.DOShakePosition(0.2f, 35f, 50);
                     StartCoroutine(AfterMoveProcessing(randomShape, field.GetRow(0)));

@@ -150,6 +150,17 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             symmetricalGenerationToggle = new Toggle("Symmetrical Generation");
             symmetricalGenerationToggle.value = true;
             root.Add(symmetricalGenerationToggle);
+            
+            //Add max move
+            var maxMoveField = new IntegerField("Max move")
+            {
+                value = level.maxMove
+            };
+            maxMoveField.RegisterValueChangedCallback(evt =>
+            {
+                level.maxMove = evt.newValue;
+            });
+            root.Add(maxMoveField);
 
             UpdateMatrixUI();
 

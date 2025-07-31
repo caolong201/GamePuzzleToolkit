@@ -50,6 +50,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
 
         public float emptyCellPercentage = 10f;
 
+        public int maxMove = 20;
         public int Number => GetLevelNum();
 
 
