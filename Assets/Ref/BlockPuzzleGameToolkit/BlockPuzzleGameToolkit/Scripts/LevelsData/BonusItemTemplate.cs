@@ -18,5 +18,6 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
     public class BonusItemTemplate : ScriptableData
     {
         public Sprite sprite;
+        public Vector2Int position;
     }
 }

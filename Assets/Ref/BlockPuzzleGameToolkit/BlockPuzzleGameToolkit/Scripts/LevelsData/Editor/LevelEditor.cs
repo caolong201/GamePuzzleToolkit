@@ -66,7 +66,8 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             root = new VisualElement();
 
             // Load and apply USS
-            var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/UIBuilder/LevelEditorStyles.uss");
+            var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>(
+                "Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/UIBuilder/LevelEditorStyles.uss");
             root.styleSheets.Add(styleSheet);
 
             root.Add(new Label(level.name) { name = "title" });
@@ -216,6 +217,19 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
 
                 amountField.style.marginLeft = 25;
                 container.Add(amountField);
+
+                var positionField = new Vector2IntField("");
+                positionField.style.marginLeft = 0;
+                positionField.style.width = 150;
+                positionField.style.height = 25;
+                positionField.value = targetInstance.position; 
+                positionField.RegisterValueChangedCallback(evt =>
+                {
+                    targetInstance.position = evt.newValue;
+                    EditorUtility.SetDirty(target);
+                });
+                container.Add(positionField);
+
                 targetParameters.Add(container);
             }
         }
@@ -381,7 +395,9 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             }
             else
             {
-                var template = singleColorMode ? randomTemplate : availableTemplates[random.Next(1, availableTemplates.Count)];
+                var template = singleColorMode
+                    ? randomTemplate
+                    : availableTemplates[random.Next(1, availableTemplates.Count)];
                 var bonus = random.Next(0, 2) == 0;
 
                 if (bonus && level.levelType.targets[0].bonusItem != null)
@@ -610,7 +626,8 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData.Editor
             }
         }
 
-        private Button CreateButton(string text, StyleColor colorLabel, string styleClass, bool pressedState, Action clickEvent)
+        private Button CreateButton(string text, StyleColor colorLabel, string styleClass, bool pressedState,
+            Action clickEvent)
         {
             var button = new Button(clickEvent);
             // label
