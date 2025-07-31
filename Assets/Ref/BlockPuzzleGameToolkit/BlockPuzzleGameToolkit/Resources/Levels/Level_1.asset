@@ -169,4 +169,48 @@ MonoBehaviour:
     amount: 0
     totalAmount: 0
     position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: d72e82e2bd3eab3449c99ca4723b46b5, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: f2b6be9e11347c844b816c7dc486c588, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 30319be60b3a470409c5c66a065998c6, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 7670b0ed879effd49b7a4631e6168ef7, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 6a40a9574225bc8428b3f549aa75dcfb, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 22825602d44ed07429573b743fd7c907, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 35111bc21f259b548bbb20b70fb9a1c7, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 58c8cf74df42a904fb249faab234e0a8, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 60077e5999a3b6c49826c2b9ebf3696f, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 047f92cf58f0eb843b124e9fcc5e0ce0, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 51c5e6869f82fdf499512a0d16966e8b, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
   emptyCellPercentage: 96.4

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 296a000e50624ee092b6cb07efe88443, type: 3}
-  m_Name: BonusItemTemplate 13
+  m_Name: BonusItemTemplate 20
   m_EditorClassIdentifier: 
   prefab: {fileID: -5885164791484336147, guid: 0149407e18629409fbb4b2b0c362519d, type: 3}
-  sprite: {fileID: 21300000, guid: 0a1707bd5985a7d4fb67816d1db623f8, type: 3}
+  sprite: {fileID: 21300000, guid: 85e5cf980de614d428f8405354173a99, type: 3}
   position: {x: 0, y: 0}
