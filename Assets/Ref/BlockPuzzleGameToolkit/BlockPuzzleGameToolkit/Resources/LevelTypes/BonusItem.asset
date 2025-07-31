@@ -20,8 +20,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 32bb1a5aabb76418d9540dfcc3861b71, type: 2}
   - {fileID: 11400000, guid: 5482c8ad9b4404200ad40dc5e0f36405, type: 2}
   - {fileID: 11400000, guid: 32e9f8bcbba534fc5968df591158bf38, type: 2}
+  - {fileID: 11400000, guid: ad03d85802a20cf4083ab0241da89a5b, type: 2}
   prePlayPopup: {fileID: 4178832618095490807, guid: a54bc7e44c36845d88c997af477f8eaa, type: 3}
   preFailedPopup: {fileID: 1194946714372672274, guid: 0845287dd41884c6087d82d3bc15ce85, type: 3}
   failedPopup: {fileID: 5818593289188755329, guid: b2e87c08fe0b34f2f8dafffa48eee43d, type: 3}
   preWinPopup: {fileID: 8907728078859512268, guid: 3308a34a723b94018abfeb98e7033f43, type: 3}
   winPopup: {fileID: -3626825670043437542, guid: a8958a46ffd4242f3a14f568e81ba1d8, type: 3}
+  selectable: 1
+  singleColorMode: 1
