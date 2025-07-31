@@ -77,6 +77,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private ObjectPool<GameObject> wordsPool;
         private ClassicModeHandler classicModeHandler;
 
+        private int shapePlacedCount = 0;
+        [SerializeField]  public int maxShapeAllowed = 20;
+
         private void OnEnable()
         {
             StateManager.instance.CurrentState = EScreenStates.Game;
@@ -143,6 +146,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         {
             comboCounter = 0;
             missCounter = 0;
+            shapePlacedCount = 0;
             field.ShowOutline(false);
             Load();
         }
@@ -189,7 +193,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                 _levelData = GameDataManager.GetLevel();
             }
 
-            if(_levelData == null)
+            if (_levelData == null)
             {
                 Debug.LogError("Level data is null");
                 return;
@@ -219,6 +223,16 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private void CheckLines(Shape obj)
         {
+            //dragon
+            shapePlacedCount++; 
+            Debug.Log($"Shape placed: {shapePlacedCount}/{maxShapeAllowed}");
+            if (shapePlacedCount > maxShapeAllowed)
+            {
+                Debug.Log("Reached max number of shape placements.");
+                SetLose();
+                return;
+            }
+
             var lines = field.GetFilledLines(false, false);
             if (lines.Count > 0)
             {
@@ -375,7 +389,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         {
             SoundBase.instance.PlayLimitSound(SoundBase.instance.combo[Mathf.Min(comboCounter, SoundBase.instance.combo.Length - 1)]);
             EventManager.GetEvent<Shape>(EGameEvent.LineDestroyed).Invoke(shape);
-            
+
             // Mark cells as destroying immediately at the start
             foreach (var line in lines)
             {
@@ -384,7 +398,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                     cell.SetDestroying(true);
                 }
             }
-            
+
             foreach (var line in lines)
             {
                 if (line.Count == 0) continue;
@@ -417,12 +431,12 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             if (Keyboard.current != null)
             {
                 // Debug keys for win/lose
-                if(Keyboard.current[GameManager.instance.debugSettings.Win].wasPressedThisFrame)
+                if (Keyboard.current[GameManager.instance.debugSettings.Win].wasPressedThisFrame)
                 {
                     SetWin();
                 }
 
-                if(Keyboard.current[GameManager.instance.debugSettings.Lose].wasPressedThisFrame)
+                if (Keyboard.current[GameManager.instance.debugSettings.Lose].wasPressedThisFrame)
                 {
                     SetLose();
                 }
