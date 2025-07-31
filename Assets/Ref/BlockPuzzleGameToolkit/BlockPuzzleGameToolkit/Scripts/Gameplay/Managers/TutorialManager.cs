@@ -145,7 +145,6 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay.Managers
             deckPosition = cellDeckManager.cellDecks[1].shape.GetActiveItems()[0].transform.position + Vector3.right * offsethand;
             var fieldManager = FindObjectOfType<FieldManager>();
             centerPosition = fieldManager.GetCenterCell().item.transform.position + Vector3.right * offsethand + Vector3.down * offsethand;
-            StartHandAnimation();
             outline.gameObject.SetActive(true);
             var value = RectTransformUtils.GetMinMaxAndSizeForCanvas(FindObjectOfType<FieldManager>().GetTutorialLine(), transform.parent.GetComponent<Canvas>());
             value.size += new Vector2(50, 50);
@@ -154,6 +153,9 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay.Managers
             {
                 outline.Play(value.center, value.size, hexColor);
             }
+            
+            yield return new WaitForSeconds(2f);
+            StartHandAnimation();
         }
 
         public Level GetLevelForPhase()

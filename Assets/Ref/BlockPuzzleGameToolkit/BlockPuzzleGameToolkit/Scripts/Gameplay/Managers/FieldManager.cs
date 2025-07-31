@@ -57,10 +57,15 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
                     var bonus = false;
                     if (level.levelRows[i].bonusItems[j])
                     {
-                        var bonusItemTemplates = level.targetInstance.Where(t => t.amount > 0 && t.targetScriptable.bonusItem != null).Select(t => t.targetScriptable.bonusItem).ToArray();
+                        var bonusItemTemplates = level.targetInstance
+                            .Where(t => t.amount > 0 && t.targetScriptable.bonusItem != null)
+                            .Select(t => (item: t.targetScriptable.bonusItem, position: t.position))
+                            .ToArray();
                         if (bonusItemTemplates.Length > 0)
                         {
-                            cells[i, j].SetBonus(bonusItemTemplates[Random.Range(0, bonusItemTemplates.Length)]);
+                            var bonusItem = bonusItemTemplates
+                                .FirstOrDefault(b => b.position.x == i && b.position.y == j);
+                            cells[i, j].SetBonus(bonusItem.item);
                             bonus = true;
                         }
                     }

@@ -70,7 +70,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             {
                 Destroy(findObjectOfType.gameObject);
             }
-            if (!GameManager.instance.IsTutorialMode())
+           // if (!GameManager.instance.IsTutorialMode())
             {
                 var t = Instantiate(targetPanel, targetParent);
                 t.OnLevelLoaded(level.levelType.elevelType);

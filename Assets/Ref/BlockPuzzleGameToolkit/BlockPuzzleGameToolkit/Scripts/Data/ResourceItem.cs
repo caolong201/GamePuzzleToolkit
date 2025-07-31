@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace BlockPuzzleGameToolkit.Scripts.Data
 {
-    [CreateAssetMenu(fileName = "Resource", menuName = "BlockPuzzleGameToolkit/Data/ResourceItem", order = 1)]
+    [CreateAssetMenu(fileName = "Resource", menuName = "Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Data/ResourceItem", order = 1)]
     public class ResourceItem : ResourceObject
     {
         public int defaultValue;

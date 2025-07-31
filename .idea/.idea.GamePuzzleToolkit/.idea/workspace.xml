@@ -6,13 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="437bf64e-7087-4e92-832f-2432c6540867" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/SettingsGame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/SettingsGame.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/AdsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/AdsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/DailyBonusSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/DailyBonusSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/GameSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Settings/GameSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Popups/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Popups/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/System/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/System/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/gamefield-cell-1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/gamefield-cell-1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Misc/TutorialLevel3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/FieldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/FieldManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/TutorialManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/TutorialManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/BonusItemTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/BonusItemTemplate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Editor/LevelEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/Editor/LevelEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/TargetScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/LevelsData/TargetScriptable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753839986009</updated>
-      <workItem from="1753839987760" duration="4389000" />
+      <workItem from="1753839987760" duration="14697000" />
     </task>
     <servers />
   </component>

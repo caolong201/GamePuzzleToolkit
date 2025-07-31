@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace BlockPuzzleGameToolkit.Scripts.LevelsData
 {
-    [CreateAssetMenu(fileName = "BonusItemTarget", menuName = "BlockPuzzleGameToolkit/Targets/BonusItemTarget", order = 1)]
+    [CreateAssetMenu(fileName = "BonusItemTarget", menuName = "Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Targets/BonusItemTarget", order = 1)]
     public class BonusItemTargetScriptable : TargetScriptable
     {
     }

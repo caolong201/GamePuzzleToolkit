@@ -27,6 +27,7 @@ namespace BlockPuzzleGameToolkit.Scripts.LevelsData
         public TargetScriptable targetScriptable;
         public int amount;
         public int totalAmount;
+        public Vector2Int position;
 
         public Target(TargetScriptable targetScriptableTemplate)
         {
