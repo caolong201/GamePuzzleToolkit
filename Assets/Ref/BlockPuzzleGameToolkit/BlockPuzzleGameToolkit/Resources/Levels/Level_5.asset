@@ -54,25 +54,25 @@ MonoBehaviour:
   - cells:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bonusItems: 0000000000000000
+    bonusItems: 0000010101000000
     disabled: 
     highlighted: 
   - cells:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bonusItems: 0000000000000000
+    bonusItems: 0000010101000000
     disabled: 
     highlighted: 
   - cells:
@@ -114,11 +114,11 @@ MonoBehaviour:
   levelType: {fileID: 11400000, guid: 094ecb60bbb264d369f89462b75805fb, type: 2}
   targetInstance:
   - targetScriptable: {fileID: 11400000, guid: 12f6802e4643f40148f460acf831cafc, type: 2}
-    amount: 5
+    amount: 0
     totalAmount: 0
     position: {x: 0, y: 0}
   - targetScriptable: {fileID: 11400000, guid: ed67ff4519d40482b807761925a30dec, type: 2}
-    amount: 10
+    amount: 0
     totalAmount: 0
     position: {x: 0, y: 0}
   - targetScriptable: {fileID: 11400000, guid: f4eba0b18c2014528a4036dca51e5039, type: 2}
@@ -134,6 +134,82 @@ MonoBehaviour:
     totalAmount: 0
     position: {x: 0, y: 0}
   - targetScriptable: {fileID: 11400000, guid: 32e9f8bcbba534fc5968df591158bf38, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: ad03d85802a20cf4083ab0241da89a5b, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 88dd466eec1675d49bdc175116619d91, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 3, y: 2}
+  - targetScriptable: {fileID: 11400000, guid: 2534f01b42da00b47b4a947796509f67, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 3, y: 3}
+  - targetScriptable: {fileID: 11400000, guid: 7b03274b0d856ad439c99119d9778c73, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 3, y: 4}
+  - targetScriptable: {fileID: 11400000, guid: 02e5d018c74df1840995b6f8cba60143, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 4, y: 2}
+  - targetScriptable: {fileID: 11400000, guid: cf66aef387860474ca36f43f03d373d0, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 4, y: 3}
+  - targetScriptable: {fileID: 11400000, guid: 3fdf26b69a7faa544a9e9eb35a1bf1ba, type: 2}
+    amount: 1
+    totalAmount: 0
+    position: {x: 4, y: 4}
+  - targetScriptable: {fileID: 11400000, guid: 03e6df9c2486a794aa0f7e084884263b, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: d72e82e2bd3eab3449c99ca4723b46b5, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: f2b6be9e11347c844b816c7dc486c588, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 30319be60b3a470409c5c66a065998c6, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 7670b0ed879effd49b7a4631e6168ef7, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 6a40a9574225bc8428b3f549aa75dcfb, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 22825602d44ed07429573b743fd7c907, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 35111bc21f259b548bbb20b70fb9a1c7, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 58c8cf74df42a904fb249faab234e0a8, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 60077e5999a3b6c49826c2b9ebf3696f, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 047f92cf58f0eb843b124e9fcc5e0ce0, type: 2}
+    amount: 0
+    totalAmount: 0
+    position: {x: 0, y: 0}
+  - targetScriptable: {fileID: 11400000, guid: 51c5e6869f82fdf499512a0d16966e8b, type: 2}
     amount: 0
     totalAmount: 0
     position: {x: 0, y: 0}

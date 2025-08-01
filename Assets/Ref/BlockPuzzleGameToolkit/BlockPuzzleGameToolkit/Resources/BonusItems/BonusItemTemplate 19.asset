@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BonusItemTemplate 19
   m_EditorClassIdentifier: 
   prefab: {fileID: -5885164791484336147, guid: 0149407e18629409fbb4b2b0c362519d, type: 3}
-  sprite: {fileID: 21300000, guid: e63d3632f25752f49bd6e5d63a5eba6b, type: 3}
+  sprite: {fileID: 21300000, guid: f97992d39a957454a8479a0ca144afae, type: 3}
   position: {x: 0, y: 0}
