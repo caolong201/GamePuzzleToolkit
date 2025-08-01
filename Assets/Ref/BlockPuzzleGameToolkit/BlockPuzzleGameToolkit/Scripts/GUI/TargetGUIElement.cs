@@ -21,7 +21,7 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
 
         public virtual void UpdateCount(int newCount, bool isTargetCompleted)
         {
-            countText.text = newCount.ToString();
+           // countText.text = newCount.ToString();
         }
     }
 }

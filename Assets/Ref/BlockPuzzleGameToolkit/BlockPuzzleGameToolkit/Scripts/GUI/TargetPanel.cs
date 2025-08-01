@@ -25,6 +25,7 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
     {
         public GameObject targetPrefab;
         private readonly Dictionary<TargetScriptable, TargetBonusGUIElement> _list = new();
+        private readonly Dictionary<string, TargetBonusGUIElement> _listGroup = new();
 
         private TargetManager targetManager;
 
@@ -36,10 +37,12 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
             {
                 OnLevelLoaded(FindObjectOfType<LevelManager>(true).GetCurrentLevel());
                 RegisterTargets();
+                Debug.LogError("Tuong: RegisterTargets");
             }
             else
             {
                 ShowTargets();
+                Debug.LogError("Tuong: ShowTargets");
             }
         }
 
@@ -71,7 +74,29 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
 
                     var targetElement = Instantiate(targetPrefab, transform);
                     var targetBonusGUIElement = targetElement.GetComponent<TargetBonusGUIElement>();
-                    targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem, target.amount);
+                    
+                    Debug.LogError("FillElement: " + target.targetScriptable.bonusItem.id);
+                    string[] ids = target.targetScriptable.bonusItem.id.Split('-');
+                    if (ids.Length == 0 || ids.Length == 1)
+                    {
+                        targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem);
+                    }
+                    else
+                    {
+                        if (!_listGroup.ContainsKey(ids[0]))
+                        {
+                            _listGroup.Add(ids[0], targetBonusGUIElement);
+                            targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem);
+                        }
+                        else
+                        {
+                            targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem);
+                            targetBonusGUIElement.transform.SetParent(_listGroup[ids[0]].transform);
+                        }
+
+                        //targetBonusGUIElement.FillElementGroup(target.targetScriptable.bonusItem);
+                    }
+                    
                     _list.Add(target.targetScriptable, targetBonusGUIElement);
                 }
             }

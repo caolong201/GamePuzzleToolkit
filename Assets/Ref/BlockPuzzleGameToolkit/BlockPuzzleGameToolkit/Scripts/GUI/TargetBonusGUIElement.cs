@@ -10,8 +10,10 @@
 // // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // // THE SOFTWARE.
 
+using System;
 using BlockPuzzleGameToolkit.Scripts.LevelsData;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace BlockPuzzleGameToolkit.Scripts.GUI
 {
@@ -19,11 +21,17 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
     {
         public Bonus bonus;
         public GameObject check;
-
-        public void FillElement(BonusItemTemplate bonusItemTemplate, int targetAmount)
+        private GridLayoutGroup layoutGroup;
+        private bool isGroup = false;
+        
+        public void FillElement(BonusItemTemplate bonusItemTemplate)
         {
             bonus.FillIcon(bonusItemTemplate);
-            countText.text = targetAmount.ToString();
+        }
+        
+        public void FillElementGroup(BonusItemTemplate bonusItemTemplate, Transform parent)
+        {
+           
         }
 
         public override void UpdateCount(int newCount, bool isTargetCompleted)

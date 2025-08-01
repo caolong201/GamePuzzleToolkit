@@ -73,7 +73,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private ObjectPool<GameObject> wordsPool;
         private ClassicModeHandler classicModeHandler;
 
-        [SerializeField] public int maxMove = 20;
+        private int maxMove = 20;
         [SerializeField] private TextMeshProUGUI txtMoves;
 
         private void OnEnable()
