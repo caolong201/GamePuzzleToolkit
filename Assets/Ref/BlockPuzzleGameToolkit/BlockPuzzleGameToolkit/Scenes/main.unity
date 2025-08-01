@@ -11986,6 +11986,7 @@ MonoBehaviour:
   comboTextPrefab: {fileID: 2962016862536130149, guid: de525d326d2534f8c902e39883867845, type: 3}
   pool: {fileID: 2033445948862087549}
   fxPool: {fileID: 3197640628567115026}
+  winPanel: {fileID: 2063621435141178868, guid: a8958a46ffd4242f3a14f568e81ba1d8, type: 3}
   gameCanvas: {fileID: 5975784297327356092}
   shakeCanvas: {fileID: 6220992156710050639}
   scorePrefab: {fileID: 9090677211101329247, guid: 2ce09125bbf0e4fadac9a857e837ebc1, type: 3}
