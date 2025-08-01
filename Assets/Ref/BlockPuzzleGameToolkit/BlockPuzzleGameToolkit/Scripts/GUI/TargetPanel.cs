@@ -87,11 +87,13 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
                         {
                             _listGroup.Add(ids[0], targetBonusGUIElement);
                             targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem);
+                            targetBonusGUIElement.transform.localScale = Vector3.one * 0.6f;
                         }
                         else
                         {
                             targetBonusGUIElement.FillElement(target.targetScriptable.bonusItem);
                             targetBonusGUIElement.transform.SetParent(_listGroup[ids[0]].transform);
+                            targetBonusGUIElement.transform.localScale = Vector3.one;
                         }
 
                         //targetBonusGUIElement.FillElementGroup(target.targetScriptable.bonusItem);
