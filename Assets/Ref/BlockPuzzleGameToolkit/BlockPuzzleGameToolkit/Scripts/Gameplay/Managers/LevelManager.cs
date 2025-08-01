@@ -43,7 +43,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private int comboCounter;
         private int missCounter;
-
+        [SerializeField] private WinPanl winPanel;
         [SerializeField] private RectTransform gameCanvas;
 
         [SerializeField] private RectTransform shakeCanvas;
@@ -75,6 +75,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private int maxMove = 20;
         [SerializeField] private TextMeshProUGUI txtMoves;
+   
 
         private void OnEnable()
         {
@@ -350,6 +351,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         private void SetWin()
         {
             GameDataManager.UnlockLevel(currentLevel + 1);
+            winPanel?.ShowWin(currentLevel);
             EventManager.GameStatus = EGameState.PreWin;
         }
 
