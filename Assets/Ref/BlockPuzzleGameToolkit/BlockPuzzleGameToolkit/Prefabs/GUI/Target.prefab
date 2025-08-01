@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8254275030662409566}
   - component: {fileID: 6353651711895704448}
   - component: {fileID: 4537828399198911787}
+  - component: {fileID: 293521298896693294}
   m_Layer: 0
   m_Name: check-icon
   m_TagString: Untagged
@@ -107,11 +108,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5482987284381858744}
-  m_Father: {fileID: 7261337814113688539}
+  m_Father: {fileID: 8085972465525031339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.6, y: -107.9}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 86, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8254275030662409566
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.011764706, b: 0.18431373, a: 0.36862746}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -174,6 +175,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &293521298896693294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674277556153343139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &4972906465666357791
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +227,6 @@ RectTransform:
   m_Children:
   - {fileID: 8085972465525031339}
   - {fileID: 5218532170320346423}
-  - {fileID: 3334896833181340406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -246,12 +266,12 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 126, y: 126}
-  m_Spacing: {x: 5, y: 5}
-  m_Constraint: 1
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 2
   m_ConstraintCount: 2
 --- !u!1 &7236483010884758925
 GameObject:
@@ -487,7 +507,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3481103693045965140, guid: 0149407e18629409fbb4b2b0c362519d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3334896833181340406}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0149407e18629409fbb4b2b0c362519d, type: 3}
 --- !u!114 &7938660377134044946 stripped
