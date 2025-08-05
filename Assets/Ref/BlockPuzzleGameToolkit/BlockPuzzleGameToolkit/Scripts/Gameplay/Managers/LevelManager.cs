@@ -15,7 +15,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using BlockPuzzleGameToolkit.Scripts.Audio;
-using BlockPuzzleGameToolkit.Scripts.Data;
 using BlockPuzzleGameToolkit.Scripts.Enums;
 using BlockPuzzleGameToolkit.Scripts.Gameplay.FX;
 using BlockPuzzleGameToolkit.Scripts.Gameplay.Managers;
@@ -36,6 +35,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
     public partial class LevelManager : MonoBehaviour
     {
         public int currentLevel;
+        
+        
         public LineExplosion lineExplosionPrefab;
         public ComboText comboTextPrefab;
         public Transform pool;
@@ -350,8 +351,8 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private void SetWin()
         {
-            GameDataManager.UnlockLevel(currentLevel + 1);
-            winPanel?.ShowWin(currentLevel);
+            winPanel?.ShowWin(GameDataManager.Stages);
+            GameDataManager.UnlockNextLevel();
             EventManager.GameStatus = EGameState.PreWin;
         }
 
@@ -491,5 +492,6 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
         {
             return gameMode;
         }
+
     }
 }

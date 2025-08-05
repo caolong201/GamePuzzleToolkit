@@ -45,7 +45,6 @@ namespace BlockPuzzleGameToolkit.Scripts.Popups
             settingsButton.onClick.AddListener(SettingsButtonClicked);
             luckySpin.onClick.AddListener(LuckySpinButtonClicked);
             UpdateFreeSpinMarker();
-            GameDataManager.LevelNum = PlayerPrefs.GetInt("Level", 1);
             var levelsCount = Resources.LoadAll<Level>("Levels").Length;
             luckySpin.gameObject.SetActive(GameManager.instance.GameSettings.enableLuckySpin);
         }

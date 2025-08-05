@@ -21,15 +21,17 @@ namespace BlockPuzzleGameToolkit.Scripts.System
 {
     public static class GameDataManager
     {
+        public static int LevelMax = 5;
         public static int LevelNum;
-
+        public static int Stages = 1;
+        
         private static Level _level;
 
         public static bool isTestPlay = false;
 
         public static void ClearPlayerProgress()
         {
-            PlayerPrefs.DeleteKey("Level");
+            PlayerPrefs.DeleteKey("Stages");
             PlayerPrefs.Save();
         }
 
@@ -51,16 +53,26 @@ namespace BlockPuzzleGameToolkit.Scripts.System
             #endif
         }
 
-        public static void UnlockLevel(int currentLevel)
+        public static void UnlockNextLevel()
         {
-            LevelNum = currentLevel;
-            PlayerPrefs.SetInt("Level", currentLevel);
+            Stages++;
+            PlayerPrefs.SetInt("Stages", Stages);
             PlayerPrefs.Save();
         }
 
         public static int GetLevelNum()
         {
-            return PlayerPrefs.GetInt("Level", 1);
+            Stages = PlayerPrefs.GetInt("Stages", 1);
+            if (Stages > LevelMax)
+            {
+                LevelNum = UnityEngine.Random.Range(2, LevelMax + 1);
+            }
+            else
+            {
+                LevelNum = Stages;
+            }
+
+            return LevelNum;
         }
 
         public static Level GetLevel()
@@ -95,13 +107,6 @@ namespace BlockPuzzleGameToolkit.Scripts.System
             PlayerPrefs.Save();
         }
 
-        public static void SetAllLevelsCompleted()
-        {
-            var levels = Resources.LoadAll<Level>("Levels").Length;
-            PlayerPrefs.SetInt("Level", levels);
-            PlayerPrefs.Save();
-        }
-
         internal static bool HasMoreLevels()
         {
             int currentLevel = GetLevelNum();
@@ -109,9 +114,5 @@ namespace BlockPuzzleGameToolkit.Scripts.System
             return currentLevel < totalLevels;
         }
 
-        public static void SetLevelNum(int stateCurrentLevel)
-        {
-            LevelNum = stateCurrentLevel;
-        }
     }
 }

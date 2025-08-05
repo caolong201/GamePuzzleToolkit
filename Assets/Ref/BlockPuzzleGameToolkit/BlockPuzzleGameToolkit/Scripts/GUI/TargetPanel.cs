@@ -37,27 +37,33 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
             {
                 OnLevelLoaded(FindObjectOfType<LevelManager>(true).GetCurrentLevel());
                 RegisterTargets();
-                Debug.LogError("Tuong: RegisterTargets");
             }
             else
             {
                 ShowTargets();
-                Debug.LogError("Tuong: ShowTargets");
             }
         }
 
         private void ShowTargets()
         {
+            Debug.LogError("Tuong: ShowTargets");
+            _listGroup.Clear();
             var targets = targetManager.GetTargetGuiElements();
             foreach (var target in targets)
             {
-                var targetElement = Instantiate(target.Value, transform);
-                targetElement.transform.localScale = Vector3.one * 1.5f;
-                targetElement.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutBack);
-                if (EventManager.GameStatus == EGameState.PreWin || EventManager.GameStatus == EGameState.Win)
+                string[] ids = target.Key.bonusItem.id.Split('-');
+                if (!_listGroup.ContainsKey(ids[0]))
                 {
-                    targetElement.GetComponent<TargetBonusGUIElement>().TargetCheck();
+                    _listGroup.Add(ids[0], null);
+                    var targetElement = Instantiate(target.Value, transform);
+                    targetElement.transform.localScale = Vector3.one;
+                    targetElement.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutBack);
+                    if (EventManager.GameStatus == EGameState.PreWin || EventManager.GameStatus == EGameState.Win)
+                    {
+                        targetElement.GetComponent<TargetBonusGUIElement>().TargetCheck();
+                    }
                 }
+                
             }
         }
 
@@ -95,8 +101,6 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
                             targetBonusGUIElement.transform.SetParent(_listGroup[ids[0]].transform);
                             targetBonusGUIElement.transform.localScale = Vector3.one;
                         }
-
-                        //targetBonusGUIElement.FillElementGroup(target.targetScriptable.bonusItem);
                     }
                     
                     _list.Add(target.targetScriptable, targetBonusGUIElement);

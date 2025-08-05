@@ -29,11 +29,6 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
             bonus.FillIcon(bonusItemTemplate);
         }
         
-        public void FillElementGroup(BonusItemTemplate bonusItemTemplate, Transform parent)
-        {
-           
-        }
-
         public override void UpdateCount(int newCount, bool isTargetCompleted)
         {
             base.UpdateCount(newCount, isTargetCompleted);
@@ -47,6 +42,7 @@ namespace BlockPuzzleGameToolkit.Scripts.GUI
         {
             countText.gameObject.SetActive(false);
             check.SetActive(true);
+            check.transform.localScale = Vector3.one;
         }
     }
 }

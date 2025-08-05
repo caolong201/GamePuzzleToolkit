@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="437bf64e-7087-4e92-832f-2432c6540867" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Sprites/items/Collectable Items/bed_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Sprites/items/Collectable Items/bed_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Sprites/items/Collectable Items/bed_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Sprites/items/Collectable Items/bed_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamePuzzleToolkit/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Animations/Target_check.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Animations/Target_check.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Animations/check-icon.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Animations/check-icon.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/Target.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/GUI/Target.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/Managers/GameManagers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Prefabs/Managers/GameManagers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Levels/Level_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Levels/Level_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Levels/Level_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Levels/Level_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/PrePlay_Bonus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/PrePlay_Bonus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/PreWin_Bonus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Resources/Popups/PreWin_Bonus.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/GUI/TargetBonusGUIElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/GUI/TargetBonusGUIElement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/GUI/TargetPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/GUI/TargetPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/ItemFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/ItemFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Gameplay/Managers/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Popups/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/Popups/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/System/GameDataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ref/BlockPuzzleGameToolkit/BlockPuzzleGameToolkit/Scripts/System/GameDataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://C:/Program Files/Unity/2020.3.13f1/Editor/6000.0.51f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Editor/TMP/HDRP/TMP_BaseHDRPLitShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/575c8d5d94a9444f82eba927ac72f8df1dfe00/bd/9f60d00b/Vector2Int.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -90,6 +106,8 @@
       <updated>1753839986009</updated>
       <workItem from="1753839987760" duration="14697000" />
       <workItem from="1753953910680" duration="2766000" />
+      <workItem from="1754042122862" duration="840000" />
+      <workItem from="1754358169030" duration="6434000" />
     </task>
     <servers />
   </component>

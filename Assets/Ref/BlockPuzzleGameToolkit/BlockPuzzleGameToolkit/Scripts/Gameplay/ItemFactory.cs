@@ -15,6 +15,7 @@ using System.Linq;
 using BlockPuzzleGameToolkit.Scripts.Enums;
 using BlockPuzzleGameToolkit.Scripts.Gameplay.Pool;
 using BlockPuzzleGameToolkit.Scripts.LevelsData;
+using BlockPuzzleGameToolkit.Scripts.System;
 using UnityEngine;
 
 namespace BlockPuzzleGameToolkit.Scripts.Gameplay
@@ -67,9 +68,11 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         private ShapeTemplate GetRandomShape()
         {
+           
+
             ShapeTemplate shapeTemplate = null;
             var shapesToConsider = levelManager.GetGameMode() == EGameMode.Adventure
-                ? shapes.Where(shape => shape.spawnFromLevel <= levelManager.currentLevel).ToArray()
+                ? shapes.Where(shape => shape.spawnFromLevel <= GameDataManager.GetLevelNum()).ToArray()
                 : shapes.Where(shape => shape.scoreForSpawn <= GetClassicScore()).ToArray();
 
             var totalWeight = shapesToConsider.Sum(shape => shape.chanceForSpawn);
@@ -116,7 +119,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
             var shape = shapeObject.GetComponent<Shape>();
             
             var eligibleShapes = levelManager.GetGameMode() == EGameMode.Adventure
-                ? shapes.Where(s => s.spawnFromLevel <= levelManager.currentLevel).ToArray()
+                ? shapes.Where(s => s.spawnFromLevel <= GameDataManager.GetLevelNum()).ToArray()
                 : shapes.Where(s => s.scoreForSpawn <= GetClassicScore()).ToArray();
             
             // Randomize shape order

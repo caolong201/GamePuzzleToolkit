@@ -54,7 +54,7 @@ namespace BlockPuzzleGameToolkit.Scripts.Gameplay
 
         public void SetBonus(BonusItemTemplate template)
         {
-            Debug.LogError("bonus: id " + template.id);
+            Debug.Log("SetBonus: id " + template.id);
             bonusItemTemplate = template;
             bonus.gameObject.SetActive(true);
             bonus.FillIcon(template);

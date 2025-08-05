@@ -46,9 +46,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
-    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
-    bonusItems: 0101000000000101
+    - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
+    - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
+    bonusItems: 0101000000000000
     disabled: 0000000000000000
     highlighted: 0000000000000000
   - cells:
@@ -70,9 +70,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    bonusItems: 0000000000000000
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    bonusItems: 0000000000000101
     disabled: 0000000000000000
     highlighted: 0000000000000000
   - cells:
@@ -200,18 +200,18 @@ MonoBehaviour:
   - targetScriptable: {fileID: 11400000, guid: 58c8cf74df42a904fb249faab234e0a8, type: 2}
     amount: 1
     totalAmount: 0
-    position: {x: 2, y: 6}
+    position: {x: 3, y: 6}
   - targetScriptable: {fileID: 11400000, guid: 60077e5999a3b6c49826c2b9ebf3696f, type: 2}
     amount: 1
     totalAmount: 0
-    position: {x: 2, y: 7}
+    position: {x: 3, y: 7}
   - targetScriptable: {fileID: 11400000, guid: 047f92cf58f0eb843b124e9fcc5e0ce0, type: 2}
     amount: 1
     totalAmount: 0
-    position: {x: 3, y: 6}
+    position: {x: 4, y: 6}
   - targetScriptable: {fileID: 11400000, guid: 51c5e6869f82fdf499512a0d16966e8b, type: 2}
     amount: 1
     totalAmount: 0
-    position: {x: 3, y: 7}
+    position: {x: 4, y: 7}
   emptyCellPercentage: 29.9
   maxMove: 20

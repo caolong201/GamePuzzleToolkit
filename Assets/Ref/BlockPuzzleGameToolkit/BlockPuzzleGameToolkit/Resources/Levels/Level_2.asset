@@ -46,9 +46,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
+    - {fileID: 11400000, guid: 076dfbfdcab5144ef8bb5ebcffb3028d, type: 2}
     - {fileID: 0}
-    bonusItems: 0001000000000100
+    bonusItems: 0001000000000000
     disabled: 0000000000000000
     highlighted: 0000000000000000
   - cells:
@@ -58,9 +58,9 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 11400000, guid: 85ebb1f53c8674f2894e5ebb8a375354, type: 2}
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 099709edcd4e3495eadd56804dc72e71, type: 2}
     - {fileID: 11400000, guid: f9f07c181947c4277bd7e9af0231e561, type: 2}
-    bonusItems: 0000000000000000
+    bonusItems: 0000000000000100
     disabled: 0000000000000000
     highlighted: 0000000000000000
   - cells:
@@ -168,7 +168,7 @@ MonoBehaviour:
   - targetScriptable: {fileID: 11400000, guid: 03e6df9c2486a794aa0f7e084884263b, type: 2}
     amount: 1
     totalAmount: 0
-    position: {x: 2, y: 6}
+    position: {x: 3, y: 6}
   - targetScriptable: {fileID: 11400000, guid: d72e82e2bd3eab3449c99ca4723b46b5, type: 2}
     amount: 0
     totalAmount: 0

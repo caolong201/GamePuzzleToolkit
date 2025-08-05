@@ -314,7 +314,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &5367260737092374842
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -328,6 +328,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -377,7 +378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3814310827027981477, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_Spacing
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8772781531119122728, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_Pivot.x
@@ -409,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8772781531119122728, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 291.7
+      value: 371.6
       objectReference: {fileID: 0}
     - target: {fileID: 8772781531119122728, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -445,7 +446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8772781531119122728, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 52.24997
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8772781531119122728, guid: d151cc641ad2f4e6ba0c0c7c90624b8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -44,6 +44,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6167490150026026163, guid: e4017410999f44635baa4cb3bb8320b4, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2448b55b4a2958e428685e50f5411d10, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2448b55b4a2958e428685e50f5411d10, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -187,6 +188,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1475199377158533630, guid: e4017410999f44635baa4cb3bb8320b4, type: 2}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -392,63 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6063e6d1a0bd47d196d930f0ed77c99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &5800290290321421959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7895572528670207041}
-  - component: {fileID: 8920133543277398658}
-  - component: {fileID: 8230691521684001276}
-  m_Layer: 0
-  m_Name: IAPManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7895572528670207041
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5800290290321421959}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6366849181247117937}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8920133543277398658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5800290290321421959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff980a1000879c44b057af715d834ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8230691521684001276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5800290290321421959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d070cf48df2d4d3db819987c544aa328, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6397767507954108941
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6366849181247117937}
   - component: {fileID: 4640674539991991055}
+  - component: {fileID: 6391170413628915529}
   m_Layer: 0
   m_Name: GameManagers
   m_TagString: Untagged
@@ -614,7 +560,6 @@ Transform:
   - {fileID: 9168473911930320609}
   - {fileID: 4367118390301509993}
   - {fileID: 6057154829333082349}
-  - {fileID: 7895572528670207041}
   - {fileID: 5407519376316626911}
   - {fileID: 7388954445890117029}
   - {fileID: 3341496598864318755}
@@ -639,3 +584,23 @@ MonoBehaviour:
   luckySpinSettings: {fileID: 11400000, guid: b94eebd2223ea448e937ce061c024d08, type: 2}
   coinsShopSettings: {fileID: 11400000, guid: 2ef89a4073b76484595f5426e60cb9b9, type: 2}
   noAdsProduct: {fileID: 11400000, guid: 5a976435f08ad439db8305e3de645368, type: 2}
+--- !u!114 &6391170413628915529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8811864150634610548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630490a36ddd4c0581994f1efaf73255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenus:
+  - {fileID: 0}
+  maps:
+  - {fileID: 0}
+  games:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

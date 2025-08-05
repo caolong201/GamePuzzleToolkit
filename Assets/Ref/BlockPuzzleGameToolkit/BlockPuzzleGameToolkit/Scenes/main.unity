@@ -3957,31 +3957,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b57f6baca8664e2c892e9527f5091ec, type: 3}
---- !u!1 &868117905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8811864150634610548, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
-  m_PrefabInstance: {fileID: 5299976734566313765}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &868117908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868117905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 630490a36ddd4c0581994f1efaf73255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenus:
-  - {fileID: 1519999581}
-  maps:
-  - {fileID: 1652444415}
-  games:
-  - {fileID: 1526455489042436528}
-  - {fileID: 2021583143456060800}
-  - {fileID: 1106558131}
 --- !u!1 &890404725
 GameObject:
   m_ObjectHideFlags: 0
@@ -12354,20 +12329,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6391170413628915529, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+      propertyPath: 'maps.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1652444415}
+    - target: {fileID: 6391170413628915529, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+      propertyPath: 'games.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1526455489042436528}
+    - target: {fileID: 6391170413628915529, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+      propertyPath: 'games.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2021583143456060800}
+    - target: {fileID: 6391170413628915529, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+      propertyPath: 'games.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1106558131}
+    - target: {fileID: 6391170413628915529, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+      propertyPath: 'mainMenus.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1519999581}
     - target: {fileID: 8811864150634610548, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
       propertyPath: m_Name
       value: GameManagers
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8230691521684001276, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
-    - {fileID: 8920133543277398658, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 5800290290321421959, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8811864150634610548, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 868117908}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c307ef08ac1ff41ea8323b06075ea4b2, type: 3}
 --- !u!1 &5322036697850507878
 GameObject:
